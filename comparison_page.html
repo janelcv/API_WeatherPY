@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <title>API WeatherPy </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+<!--NAVIGATION-->
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="landing_page.html">Lattitude</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Plots
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="vis_maxtemp.html">Max Temperature</a></li>
+            <li><a href="vis_humidity.html">Humidity</a></li>
+            <li><a href="vis_cloud.html">Cloudiness</a></li>
+            <li><a href="vis_windspeed.html">Wind Speed</a></li>
+          </ul>
+        </li>
+        <li><a href="comparison_page.html">Comparison</a></li>
+        <li><a href="data_page.html">Data</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!--SHOWCASE-->
+  <section class = "showcase">
+      <div class="container">
+      <h1 align="center">Lattitude</h1>
+      <hr>
+      <p></p>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <div class="background">
+  <div class="container">
+    <div class="panel comparison-table">
+      <div class="comparison-plan">
+        <i class="fas fa-temperature-high "></i>
+        <h2 class="comparison-header"> Max Temp</h2>
+        <ul class="comparison-features">
+          <li class="comparison-features-item"></li>
+          <a href="images/maxtemp.png"><img class="comparison-img" src="images/maxtemp.png" alt="max temp"></a>
+          <li class="comparison-features-item"></li>
+        </ul>
+        <a href="vis_maxtemp.html" class="comparison-button">view</a>
+      </div>
+
+      <div class="comparison-plan">
+        <i class="fas fa-cloud-sun-rain"></i>
+        <h2 class="comparison-header">Humidity</h2>
+        <ul class="comparison-features">
+          <li class="comparison-features-item"></li>
+          <a href="images/humidity.png"><img class="comparison-img" src="images/humidity.png" alt="humidity"></a>
+          <li class="comparison-features-item"></li>
+        </ul>
+        <a href="vis_humidity.html" class="comparison-button">view</a>
+      </div>
+
+      <div class="comparison-plan">
+        <i class="fas fa-cloud"></i>
+        <h2 class="comparison-header">Cloudiness</h2>
+        <ul class="comparison-features">
+          <li class="comparison-features-item"></li>
+          <a href="images/cloud.png"><img class="comparison-img" src="images/cloud.png" alt="cloudiness"></a>
+          <li class="comparison-features-item"></li>
+        </ul>
+        <a href="vis_cloud.html" class="comparison-button">view</a>
+      </div>
+
+      <div class="comparison-plan">
+        <i class="fas fa-wind"></i>
+        <h2 class="comparison-header">Wind Speed</h2>
+        <ul class="comparison-features">
+          <li class="comparison-features-item"></li>
+          <a href="images/windspeed.png"><img class="comparison-img" src="images/windspeed.png" alt="wind speed"></a>
+          <li class="comparison-features-item"></li>
+        </ul>
+        <a href="vis_windspeed.html" class="comparison-button">view</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer align="center">
+  <p>API WeatherPy, Copyright &copy; 2018</p>
+</footer>
+
+</body>
+
+</html>
