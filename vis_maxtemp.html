@@ -6,87 +6,92 @@
   <title>API WeatherPy </title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <!-- <link rel="stylesheet" href="css/reset.css"> -->
+  <link rel="stylesheet" href="css/style2.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-<!--NAVIGATION-->
-<nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="index.html">Lattitude</a>
+  <!--NAVIGATION-->
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">Lattitude</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Plots
+              <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="vis_maxtemp.html">Max Temperature</a></li>
+              <li><a href="vis_humidity.html">Humidity</a></li>
+              <li><a href="vis_cloud.html">Cloudiness</a></li>
+              <li><a href="vis_windspeed.html">Wind Speed</a></li>
+            </ul>
+          </li>
+          <li><a href="comparison_page.html">Comparison</a></li>
+          <li><a href="data_page.html">Data</a></li>
+        </ul>
+      </div>
     </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav navbar-right">
-        <li class="dropdown">
-          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Plots
-          <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="vis_maxtemp.html">Max Temperature</a></li>
-            <li><a href="vis_humidity.html">Humidity</a></li>
-            <li><a href="vis_cloud.html">Cloudiness</a></li>
-            <li><a href="vis_windspeed.html">Wind Speed</a></li>
-          </ul>
-        </li>
-        <li><a href="comparison_page.html">Comparison</a></li>
-        <li><a href="data_page.html">Data</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
+  </nav>
 
-<section id="home" class="parallax-section">
-               <div class="col-lg-8 col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
-                    <div class="home-img">
-                      <img class="image" src="images/maxtemp.png" alt="max temp">
-                    </div>
-               </div>
-               <div class="col-lg-4 col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
-                    <div class="home-thumb">
-                         <div class="section-title">
-                              <h1 <i class="fas fa-temperature-high " class="wow fadeInUp"> Max Temperature.</i></h1>
-                              <h2 class="wow fadeInUp">Description:</h2>
-                              <p class="wow fadeInUp">As expected, the weather becomes significantly warmer as one approaches the equator(0 Deg.Lattitude).More intrestengly, however, is the fact that the souther hemishpire tends to be warmer this time of the yeat than northern hemisphere. This may be due to the tilt of the earth at the time ot the year this data gathered.</p>
-                         </div>
-                    <div class="vissmall">
-                           <div class="container" align="center">
-                               <div class="col-lg-4 col-sm-4">
-                                 <h3 <i class="fas fa-cloud-sun-rain" class="comparison-header"> Humidity </i></h3>
-                                 <a href="vis_humidity.html"><img class="comparison-img" src="images/humidity.png" alt="humidity"></a>
-                                 <p>Lattitude vs. Humidity</p>
-                               </div>
-                               <div class="col-lg-4 col-sm-4">
-                                 <h3 <i class="fas fa-cloud"class="comparison-header">Cloudiness</i></h3>
-                                 <a href="vis_cloud.html"><img class="comparison-img" src="images/cloud.png" alt="cloudiness"></a>
-                                 <p>Lattitude vs. Cloudiness</p>
-                               </div>
-                               <div class="col-lg-4 col-sm-4">
-                                 <h3 <i class="fas fa-wind" class="comparison-header">Wind Speed</i></h3>
-                                 <a href="vis_windspeed.html"><img class="comparison-img" src="images/windspeed.png" alt="wind speed"></a>
-                                 <p>Lattitude vs. Wind Speed</p>
-                                </div>
-                            </div>
-                          </div>
-                        </div>
-                    </div>
-               </div>
+  <section id="home">
+    <div>
+      <div class="row">
+        <div class="col-xs-8 col-xs-offset-2 col-md-8">
+          <div class="home-img">
+            <img class="image img-responsive" src="images/City Latitude vs. Max Temperature.png" alt="max temp">
           </div>
-     </div>
-</section>
+        </div>
 
-<footer align="center">
-  <p>API WeatherPy, Copyright &copy; 2018</p>
-</footer>
+        <div class="col-xs-8 col-xs-offset-2 col-md-4">
+          <div class="home-thumb">
+            <div class="section-title">
+              <h1 <i class="fas fa-temperature-high " class="wow fadeInUp"> Max Temperature.</i></h1>
+              <h2 class="wow fadeInUp">Description:</h2>
+              <p class="wow fadeInUp">As expected, the weather becomes significantly warmer as one approaches the equator(0 Deg.Lattitude).More intrestengly, however, is the fact that the souther hemishpire tends to be warmer this time of the yeat
+                than
+                northern hemisphere. This may be due to the tilt of the earth at the time ot the year this data gathered.</p>
+            </div>
+
+            <div class="vissmall">
+              <div class="" align="center">
+                <div class="col-xs-4">
+                  <h3 <i class="fas fa-cloud-sun-rain" class="comparison-header"> Humidity </i></h3>
+                  <a href="vis_humidity.html"><img class="comparison-img img-responsive" src="images/City Latitude vs. Humidity.png" alt="humidity"></a>
+                  <p>Lattitude vs. Humidity</p>
+                </div>
+                <div class="col-xs-4">
+                  <h3 <i class="fas fa-cloud" class="comparison-header">Cloudiness</i></h3>
+                  <a href="vis_cloud.html"><img class="comparison-img img-responsive" src="images/City Latitude vs. Cloudiness.png" alt="cloudiness"></a>
+                  <p>Lattitude vs. Cloudiness</p>
+                </div>
+                <div class="col-xs-4">
+                  <h3 <i class="fas fa-wind" class="comparison-header">Wind Speed</i></h3>
+                  <a href="vis_windspeed.html"><img class="comparison-img img-responsive" src="images/City Latitude vs. Wind Speed.png" alt="wind speed"></a>
+                  <p>Lattitude vs. Wind Speed</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>API WeatherPy, Copyright &copy; 2018</p>
+  </footer>
 
 </body>
 
