@@ -24,7 +24,7 @@ body {
 }
 
 .jumbotron {
-  background: url('/images/showcase.jpg') no-repeat;
+  background:url('/images/showcase.jpg') no-repeat;
   background-position: center;
   height: 200px;
   padding: 140px 100px;
