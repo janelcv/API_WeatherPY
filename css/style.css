@@ -1,366 +1,115 @@
-* {
-  margin: 0;
-  padding: 0
+:root {
+  box-sizing: border-box;
+}
+
+*,
+::before,
+::after {
+  box-sizing: inherit;
 }
 
 body {
-  background: #ccc;
+  font-size: 16px;
+  font-family: Helvetica, Arial, sans-serif;
 }
 
-.branding {
-  background: ;
-  color: black;
-}
+.background {
+  background: #ccc;}
 
-/*---------------------------------------
-    Navbar
------------------------------------------*/
 .navbar {
-  background: #009688;
   position: relative;
   min-height: 50px;
   margin-bottom: 0px;
   border: 1px solid transparent;
 }
 
-@media (min-width: 600px) {
-  .navbar {
-    background-color: lightgrey;
-  }
-}
-
-/*---------------------------------------
-    home page image
------------------------------------------*/
-.showcase {
+.jumbotron {
   background: url('../images/showcase.jpg') no-repeat;
   background-position: center;
-  height: 300px;
+  height: 200px;
   padding: 140px 100px;
   color: white;
 }
 
-.showcase h1 {
+.jumbotron h1 {
   font-size: 40px;
   font-weight: 700;
   text-transform: uppercase;
 }
 
-.showcase hr {
+.jumbotron hr {
   width: 250px;
   margin: auto;
   border-width: 3px;
   border-color: #f44336;
 }
 
-/*---------------------------------------
-    home page
------------------------------------------*/
-.section .fa {
-  margin-top: 0px;
-  margin-bottom: 20px;
-  font-size: 50px;
-  color: white;
-}
-
-.section1 .fa {
-  margin-top: 0px;
-  margin-bottom: 20px;
-  font-size: 50px;
-  color: white;
-}
-
-.section2 .fa {
-  margin-top: 0px;
-  margin-bottom: 20px;
-  font-size: 50px;
-  color: white;
-}
-
-.section1 {
-  background-color: lighgrey;
-}
-
-.section2 {
-  background-color: lighgrey;
-}
-
-@media (max-width: 600px) {
-  .section1 {
-    background-color: #009688;
-  }
-
-  .section2 {
-    background-color: #009688;
-  }
-
-  .section1 .fa {
-    color: red;
-  }
-
-  .section2 .fa {
-    color: red;
-  }
-}
-
-/*---------------------------------------
-    comparison_page
------------------------------------------*/
-html {
-  box-sizing: border-box;
-  font-family: 'Open Sans', sans-serif;
-}
-
-*, *:before, *:after {
-  box-sizing: inherit;
-}
-
-.background {
-  padding: 0 25px 25px;
-  position: relative;
-  width: 100%;
-}
-
-.background::after {
-  content: '';
-  background: #ccc;
-  background: -moz-linear-gradient(top, #ccc 0%, #009688 100%);
-  background: -webkit-linear-gradient(top, #ccc 0%, #009688 100%);
-  background: linear-gradient(to bottom, #ccc 0%, #009688 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#60a9ff', endColorstr='#4394f4', GradientType=0);
-  height: 100%;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 100%;
-  z-index: 1;
-}
-
-@media (min-width: 600px) {
-  .background {
-    padding: 0 0 25px;
-  }
-}
-
-.container {
-  margin: 0 auto;
-  padding: 50px 20px 20px;
-  width: 100%;
-}
-
-.panel {
-  background-color: #fff;
-  border-radius: 10px;
-  padding: 15px 25px;
-  position: relative;
-  width: 100%;
-  z-index: 10;
-}
-
-.comparison-table {
-  box-shadow: 0px 10px 13px -6px rgba(0, 0, 0, 0.08), 0px 20px 31px 3px rgba(0, 0, 0, 0.09), 0px 8px 20px 7px rgba(0, 0, 0, 0.02);
-  display: flex;
-  flex-direction: column;
-}
-
-@media (min-width: 600px) {
-  .comparison-table {
-    flex-direction: row;
-  }
-}
-
-.comparison-table * {
+.fas {
   text-align: center;
-  text-transform: uppercase;
-}
+  margin-top: 0px;
+  margin-top: 20px
+  margin-bottom: 20px;
+  font-size: 40px;
+  color: #101010;}
 
-.comparison-plan {
-  border-bottom: 1px solid #e1f1ff;
-  padding: 25px;
-}
-
-.comparison-plan:last-child {
-  border-bottom: none;
-}
-
-@media (min-width: 600px) {
-  .comparison-plan {
-    border-bottom: none;
-    border-right: 1px solid #e1f1ff;
-    flex-basis: 100%;
-    padding: 25px 25px;
-  }
-
-  .comparison-plan:last-child {
-    border-right: none;
-  }
-}
-
-.comparison-plan .fas {
-  font-size: 50px;
-  color: #009688;
-  margin-bottom: 25px;
-  max-width: 100%;
-}
-
-.comparison-img {
-  width: 200px;
-  height: 200px;
-  position: relative;
-  padding-right: 5px;
-  padding-left: 5px;
-}
-
-.comparison-header {
-  color: #009688;
-  font-weight: 600;
-  letter-spacing: 1px;
-}
-
-.comparison-features {
-  color: #888;
-  font-weight: 600;
-  letter-spacing: 1px;
-  margin: 50px 0 25px;
-}
-
-.comparison-features-item {
-  border-top: 1px solid #009688;
-  font-size: 12px;
-  line-height: 1.5;
-  padding: 15px 0;
-}
-
-.comparison-features-item:last-child {
-  border-bottom: 1px solid #009688;
-}
-
-.comparison-price {
-  color: #009688;
-  display: block;
-  font-size: 32px;
-  font-weight: 700;
-}
-
-.comparison-button {
-  border: 1px solid #009688;
-  border-radius: 10px;
-  color: #009688;
-  display: inline-block;
-  margin: 25px 0;
-  padding: 15px 35px;
-  text-decoration: none;
-  transition: all 150ms ease-in-out;
-}
-
-.comparison-button:hover,
-.comparison-button:focus {
-  background-color: #e1f1ff;
-}
-
-.comparison-button.is-featured {
-  background-color: #48aaff;
-  color: #fff;
-}
-
-.comparison-button.is-featured:hover,
-.comparison-button.is-featured:active {
-  background-color: #269aff;
-}
-
-/*---------------------------------------
-    visualisation section
------------------------------------------*/
-#home {
-  height: 100vh;
-}
-
-#home h1 {
-  font-style: normal;
-  font-weight: bold;
-  color: #009688;
-  padding-bottom: 10px;
-}
-
-#home h2 {
-  font-style: italic;
-  color: white;
-  padding-bottom: 10px;
-}
-
-#home h3 {
-  font-style: normal;
-  font-weight: bold;
-  color: #009688;
-  padding-bottom: 10px;
-}
-
-#home p {
-  font-style: oblique;
-  color: white;
-  padding-bottom: 10px;
-}
-
-#home .col-lg-6 {
-  background: #f1e2d7;
-  /* light blue color: #c3eafd; */
-  padding-right: 0;
-  padding-left: 0;
-}
-
-#home .home-img {
-  background: no-repeat;
-  background-size: cover;
-  background-position: 50% 50%;
-  width: 100%;
-  height: 70vh;
-}
-
-#home .image {
-  width: 100%;
-  height: 70vh;
-}
-
-#home .home-thumb {
-  align-items: center;
-  height: 100vh;
-  padding: 0 0px 0 0px;
-}
-
-@media (min-width: 600px) {
-  .home-thumb {
-    padding: 25px 25px;
-  }
-
-  /*---------------------------------------
-      data
-  -----------------------------------------*/
-  #data {
-    background: url('../images/showcase.jpg') no-repeat;
-    background-position: center;
-    padding-bottom: 0px;
-
-  }
-
-  #data hr {
-    margin-top: 0px;
-    width: auto;
+  .panel-default hr {
+    width: 100px;
+    margin: 10px;
     border-width: 3px;
     border-color: white;
   }
-
-  #data h1 {
-    font-style: normal;
-    font-weight: bold;
-    color: white;
-    font-size: 40px;
-    padding-bottom: 15px;
-  }
-
-  #data p {
-    font-style: normal;
-    font-weight: bold;
-    color: white;
+  .panel-default h2 {
     font-size: 20px;
-    padding-bottom: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: white;
   }
+
+  .title h1{
+    font-size: 20px;
+    font-weight: 700;
+    font-style: normal;
+    text-transform: uppercase;
+    color: #101010;
+  }
+
+  .title h2{
+    font-size: 10px;
+    font-weight: 700;
+    font-style: italic;
+    color: #101010;
+  }
+
+  .title p{
+    font-size: 40px;
+    font-weight: 200;
+    font-style: normal;
+    color: #101010;
+  }
+
+.row h3{
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #101010;
+}
+.row p{
+  font-size: 10px;
+  font-weight: 700;
+  font-style: italic;
+  color: #101010;
+}
+
+.comparison-img{
+  position: center;
+}
+
+#footer {padding-top: 30px;
+  padding-bottom: 24px;}
+
+
+@media (max-width: 768px) {
+  .navbar {
+    background-color: #ccc;
+  }
+}
