@@ -44,6 +44,13 @@ body {
   border-color: #f44336;
 }
 
+#mainpage h1{
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: left;
+}
+
 .fas {
   text-align: center;
   margin-top: 0px;
